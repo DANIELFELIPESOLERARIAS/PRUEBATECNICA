@@ -1,0 +1,199 @@
+body {
+    background-color: #1e1e1e; /* Color de fondo más oscuro */
+    color: #e0e0e0; /* Color de texto más suave */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más moderna */
+    line-height: 1.6; /* Mejora la legibilidad */
+    overflow-x: hidden; /* Eliminar desplazamiento horizontal */
+}
+
+.container {
+    width: 400px; /* Aumentar el ancho para mejor uso del espacio */
+    margin: 100px auto; /* Centrar el contenedor */
+    padding: 30px; /* Espaciado interno */
+    background-color: #2a2a2a; /* Fondo del contenedor */
+    border-radius: 10px; /* Bordes más suaves */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Sombra más prominente */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de animación */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* Sombra más intensa al pasar el mouse */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.6em; /* Tamaño de fuente más grande */
+    color: #007bff; /* Color azul metálico para el título */
+}
+
+.input-group {
+    position: relative; /* Para posicionar el icono */
+    margin: 12px 0; /* Espaciado entre campos */
+}
+
+.input-group i {
+    position: absolute; /* Posicionar el icono */
+    left: 10px; /* Espaciado a la izquierda */
+    top: 50%; /* Centrar verticalmente el icono */
+    transform: translateY(-50%); /* Ajustar verticalmente */
+    color: #007bff; /* Color del icono */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+button {
+    width: 100%; /* Ancho completo */
+    padding: 12px 15px; /* Espaciado */
+    margin: 12px 0; /* Margen superior e inferior */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Para incluir padding en el ancho total */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    background-color: #3c3c3c; /* Color de fondo de los campos */
+    color: #f5f5f5; /* Color de texto */
+    border: 1px solid #555; /* Añadir un borde sutil */
+    transition: border-color 0.3s, background-color 0.3s; /* Transiciones para el borde y el fondo */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff; /* Color de borde en foco */
+    background-color: #4c4c4c; /* Fondo más claro al enfocar */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado por defecto */
+    transition: color 0.3s; /* Transición suave */
+}
+
+a:hover {
+    color: #0056b3; /* Color del enlace al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+p {
+    text-align: center; /* Centrar texto del párrafo */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para mejorar la legibilidad de enlaces */
+a:focus {
+    outline: 2px solid #007bff; /* Resaltar enlace al recibir foco */
+}
+select {
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"><polygon points="5,8 10,13 15,8" /></svg>'); /* Custom arrow */
+    background-repeat: no-repeat; /* No repeat */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 12px; /* Size of the arrow */
+}
+
+button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1em; /* Button font size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Background color on hover */
+    transform: translateY(-2px); /* Elevation effect on hover */
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s; /* Transition for hover */
+}
+
+a:hover {
+    color: #0056b3; /* Link color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+p {
+    text-align: center; /* Center paragraph text */
+    margin-top: 20px; /* Top margin */
+}
+
+/* Style for better readability of links */
+a:focus {
+    outline: 2px solid #007bff; /* Highlight link on focus */
+}
+
+/* Estilo para el popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+        }
+
+        .popup-content h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .popup-content p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .popup-content button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .popup-content button:hover {
+            background-color: #4cae4c;
+        }
