@@ -1,0 +1,6 @@
+Nota sobre el Proyecto de Desarrollo Web utilizando XAMPP, PHPMyAdmin, PHP, CSS y HTML
+
+Objetivo del Proyecto: El objetivo de este proyecto es desarrollar una aplicación web funcional utilizando las tecnologías mencionadas, desplegándola en un 
+entorno local con XAMPP, y gestionar la base de datos a través de PHPMyAdmin. La aplicación incluye la funcionalidad completa de un sistema CRUD (Create, Read, Update, Delete) 
+para gestionar datos en la base de datos y validaciones en los formularios de entrada de datos, asegurando una correcta interacción con el sistema. 
+A lo largo del proyecto, se han utilizado PHP para la lógica de backend, CSS para el diseño visual y HTML para la estructura del contenido.
